@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7F14F511-BCD2-49B9-A345-AE5783443A22}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>SectionnerServer</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;D_SCL_SECURE_NO_WARNINGS;WITH_NONAMESPACES;WITH_NO_C_LOCALE</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Parser;..\Split;..\Tools;..\DataBase;..\Security;..\Calibration;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;D_SCL_SECURE_NO_WARNINGS;WITH_NONAMESPACES;WITH_NO_C_LOCALE</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Parser;..\Split;..\Tools;..\DataBase;..\Security;..\Calibration;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <DataExecutionPrevention>false</DataExecutionPrevention>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;D_SCL_SECURE_NO_WARNINGS;WITH_NONAMESPACES;WITH_NO_C_LOCALE</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Parser;..\Split;..\Tools;..\DataBase;..\Security;..\Calibration;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;D_SCL_SECURE_NO_WARNINGS;WITH_NONAMESPACES;WITH_NO_C_LOCALE</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\Parser;..\Split;..\Tools;..\DataBase;..\Security;..\Calibration;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <GenerateXMLDocumentationFiles>true</GenerateXMLDocumentationFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="DeviceMap.cpp" />
+    <ClCompile Include="ExecuteRequest.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="SConnection.cpp" />
+    <ClCompile Include="soapC.cpp" />
+    <ClCompile Include="soapSectionnerService.cpp" />
+    <ClCompile Include="stdsoap2.cpp" />
+    <ClCompile Include="threads.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DeviceMap.h" />
+    <ClInclude Include="ExecuteRequest.h" />
+    <ClInclude Include="Header.h" />
+    <ClInclude Include="SConnection.h" />
+    <ClInclude Include="soapH.h" />
+    <ClInclude Include="soapSectionnerService.h" />
+    <ClInclude Include="soapStub.h" />
+    <ClInclude Include="source.h" />
+    <ClInclude Include="stdsoap2.h" />
+    <ClInclude Include="threads.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataBase\DataBase.vcxproj">
+      <Project>{c5055df2-4313-4838-92d1-37be3f2ccf91}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Parser\Parser.vcxproj">
+      <Project>{664e366c-755b-4cc0-8dc0-76a2c563d566}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Security\Security.vcxproj">
+      <Project>{86a6ca8e-6266-4d2c-a2a4-2999259a953c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Split\Split.vcxproj">
+      <Project>{2f8f985e-01de-4307-afd1-8cd9c9a15462}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.vcxproj">
+      <Project>{bdc9b32c-e4ad-4db1-b9f2-05a6bdb52e4d}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="sectionner.AddUser.req.xml" />
+    <Xml Include="sectionner.AddUser.res.xml" />
+    <Xml Include="sectionner.AssignDeviceToUser.req.xml" />
+    <Xml Include="sectionner.AssignDeviceToUser.res.xml" />
+    <Xml Include="sectionner.ChangeCityName.req.xml" />
+    <Xml Include="sectionner.ChangeCityName.res.xml" />
+    <Xml Include="sectionner.ChangeDeviceName.req.xml" />
+    <Xml Include="sectionner.ChangeDeviceName.res.xml" />
+    <Xml Include="sectionner.ChangeLocationName.req.xml" />
+    <Xml Include="sectionner.ChangeLocationName.res.xml" />
+    <Xml Include="sectionner.DeleteDeviceFromUser.req.xml" />
+    <Xml Include="sectionner.DeleteDeviceFromUser.res.xml" />
+    <Xml Include="sectionner.DeleteDevices.req.xml" />
+    <Xml Include="sectionner.DeleteDevices.res.xml" />
+    <Xml Include="sectionner.DeleteUser.req.xml" />
+    <Xml Include="sectionner.DeleteUser.res.xml" />
+    <Xml Include="sectionner.GetActivityLog.req.xml" />
+    <Xml Include="sectionner.GetActivityLog.res.xml" />
+    <Xml Include="sectionner.GetAllDeviceStatus.req.xml" />
+    <Xml Include="sectionner.GetAllDeviceStatus.res.xml" />
+    <Xml Include="sectionner.GetCityAndLocations.req.xml" />
+    <Xml Include="sectionner.GetCityAndLocations.res.xml" />
+    <Xml Include="sectionner.GetDeviceCalibration.req.xml" />
+    <Xml Include="sectionner.GetDeviceCalibration.res.xml" />
+    <Xml Include="sectionner.GetDevicePicture.req.xml" />
+    <Xml Include="sectionner.GetDevicePicture.res.xml" />
+    <Xml Include="sectionner.GetDevicePicturePart.req.xml" />
+    <Xml Include="sectionner.GetDevicePicturePart.res.xml" />
+    <Xml Include="sectionner.GetDeviceStatus.req.xml" />
+    <Xml Include="sectionner.GetDeviceStatus.res.xml" />
+    <Xml Include="sectionner.GetDeviceStatusLog.req.xml" />
+    <Xml Include="sectionner.GetDeviceStatusLog.res.xml" />
+    <Xml Include="sectionner.GetDeviceStatusSMS.req.xml" />
+    <Xml Include="sectionner.GetDeviceStatusSMS.res.xml" />
+    <Xml Include="sectionner.GetServerOptions.req.xml" />
+    <Xml Include="sectionner.GetServerOptions.res.xml" />
+    <Xml Include="sectionner.GetUserDeviceList.req.xml" />
+    <Xml Include="sectionner.GetUserDeviceList.res.xml" />
+    <Xml Include="sectionner.GetUserDevices.req.xml" />
+    <Xml Include="sectionner.GetUserDevices.res.xml" />
+    <Xml Include="sectionner.GetUserLog.req.xml" />
+    <Xml Include="sectionner.GetUserLog.res.xml" />
+    <Xml Include="sectionner.GetUsersList.req.xml" />
+    <Xml Include="sectionner.GetUsersList.res.xml" />
+    <Xml Include="sectionner.Login.req.xml" />
+    <Xml Include="sectionner.Login.res.xml" />
+    <Xml Include="sectionner.SaveActivityLog.req.xml" />
+    <Xml Include="sectionner.SaveActivityLog.res.xml" />
+    <Xml Include="sectionner.SaveDeviceStatusLog.req.xml" />
+    <Xml Include="sectionner.SaveDeviceStatusLog.res.xml" />
+    <Xml Include="sectionner.SaveUserLog.req.xml" />
+    <Xml Include="sectionner.SaveUserLog.res.xml" />
+    <Xml Include="sectionner.SetAllDeviceSetting.req.xml" />
+    <Xml Include="sectionner.SetAllDeviceSetting.res.xml" />
+    <Xml Include="sectionner.SetDeviceCalibration.req.xml" />
+    <Xml Include="sectionner.SetDeviceCalibration.res.xml" />
+    <Xml Include="sectionner.SetDeviceSetting.req.xml" />
+    <Xml Include="sectionner.SetDeviceSetting.res.xml" />
+    <Xml Include="sectionner.SetDeviceSettingSMS.req.xml" />
+    <Xml Include="sectionner.SetDeviceSettingSMS.res.xml" />
+    <Xml Include="sectionner.SetServerOptions.req.xml" />
+    <Xml Include="sectionner.SetServerOptions.res.xml" />
+    <Xml Include="sectionner.UpdateUser.req.xml" />
+    <Xml Include="sectionner.UpdateUser.res.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sectionner.nsmap" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="sectionner.wsdl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ExecuteRequest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="soapC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdsoap2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="threads.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="soapSectionnerService.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ExecuteRequest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="source.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DeviceMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="soapH.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="soapStub.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdsoap2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="threads.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="soapSectionnerService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="sectionner.AddUser.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.AddUser.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.AssignDeviceToUser.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.AssignDeviceToUser.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.ChangeCityName.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.ChangeCityName.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.ChangeDeviceName.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.ChangeDeviceName.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.ChangeLocationName.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.ChangeLocationName.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.DeleteDeviceFromUser.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.DeleteDeviceFromUser.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.DeleteDevices.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.DeleteDevices.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.DeleteUser.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.DeleteUser.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetActivityLog.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetActivityLog.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetAllDeviceStatus.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetAllDeviceStatus.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetCityAndLocations.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetCityAndLocations.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDeviceCalibration.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDeviceCalibration.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDevicePicture.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDevicePicture.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDevicePicturePart.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDevicePicturePart.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDeviceStatus.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDeviceStatus.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDeviceStatusLog.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDeviceStatusLog.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDeviceStatusSMS.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetDeviceStatusSMS.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetServerOptions.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetServerOptions.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetUserDeviceList.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetUserDeviceList.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetUserDevices.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetUserDevices.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetUserLog.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetUserLog.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetUsersList.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.GetUsersList.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.Login.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.Login.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SaveActivityLog.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SaveActivityLog.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SaveDeviceStatusLog.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SaveDeviceStatusLog.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SaveUserLog.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SaveUserLog.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetAllDeviceSetting.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetAllDeviceSetting.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetDeviceCalibration.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetDeviceCalibration.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetDeviceSetting.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetDeviceSetting.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetDeviceSettingSMS.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetDeviceSettingSMS.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetServerOptions.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.SetServerOptions.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.UpdateUser.req.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+    <Xml Include="sectionner.UpdateUser.res.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sectionner.nsmap">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="sectionner.wsdl">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+</Project>

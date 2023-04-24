@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns="Sectionner">
+ <SOAP-ENV:Body>
+  <!-- ns__SaveUserLog(..., ns__User requestUser, ns__UserLog requestActivityLog, ...) -->
+  <ns:SaveUserLog>
+   <!-- ns__User requestUser -->
+   <requestUser>
+    <!-- int uId -->
+    <uId>0</uId>
+    <!-- std::string uName -->
+    <uName></uName>
+    <!-- std::string uPassword -->
+    <uPassword></uPassword>
+    <!-- std::string uRePassword -->
+    <uRePassword></uRePassword>
+    <!-- std::string uFirstName -->
+    <uFirstName></uFirstName>
+    <!-- std::string uLastName -->
+    <uLastName></uLastName>
+    <!-- enum ns__UserType uType -->
+    <uType>Monitor</uType>
+    <!-- std::string uKey -->
+    <uKey></uKey>
+    <!-- ns__ErrorCode uErr -->
+    <uErr>
+     <!-- int eNo -->
+     <eNo>0</eNo>
+     <!-- std::string eMsg -->
+     <eMsg></eMsg>
+     <!-- enum ns__SettingLevel eType -->
+     <eType>Normal</eType>
+    </uErr>
+   </requestUser>
+   <!-- ns__UserLog requestActivityLog -->
+   <requestActivityLog>
+    <!-- ns__ReportRange ulRange -->
+    <ulRange>
+     <!-- time_t rrStart -->
+     <rrStart>2017-12-02T17:02:56Z</rrStart>
+     <!-- time_t rrEnd -->
+     <rrEnd>2017-12-02T17:02:56Z</rrEnd>
+    </ulRange>
+    <!-- std::string ulData -->
+    <ulData></ulData>
+    <!-- ns__User ulUser -->
+    <ulUser>
+     <!-- int uId -->
+     <uId>0</uId>
+     <!-- std::string uName -->
+     <uName></uName>
+     <!-- std::string uPassword -->
+     <uPassword></uPassword>
+     <!-- std::string uRePassword -->
+     <uRePassword></uRePassword>
+     <!-- std::string uFirstName -->
+     <uFirstName></uFirstName>
+     <!-- std::string uLastName -->
+     <uLastName></uLastName>
+     <!-- enum ns__UserType uType -->
+     <uType>Monitor</uType>
+     <!-- std::string uKey -->
+     <uKey></uKey>
+     <!-- ns__ErrorCode uErr -->
+     <uErr>
+      <!-- int eNo -->
+      <eNo>0</eNo>
+      <!-- std::string eMsg -->
+      <eMsg></eMsg>
+      <!-- enum ns__SettingLevel eType -->
+      <eType>Normal</eType>
+     </uErr>
+    </ulUser>
+   </requestActivityLog>
+  </ns:SaveUserLog>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

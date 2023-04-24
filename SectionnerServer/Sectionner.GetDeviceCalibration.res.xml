@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns="Sectionner">
+ <SOAP-ENV:Body>
+  <!-- ns__GetDeviceCalibration(..., ns__CalibrationList &responsCalibrationList) -->
+  <ns:CalibrationList>
+   <!-- std::vector<ns__Calibration> clVoltage -->
+   <clVoltage>
+    <!-- double cOffset -->
+    <cOffset>0.0</cOffset>
+    <!-- double cZero -->
+    <cZero>0.0</cZero>
+    <!-- double cSpan -->
+    <cSpan>0.0</cSpan>
+    <!-- double cMin -->
+    <cMin>0.0</cMin>
+    <!-- double cMax -->
+    <cMax>0.0</cMax>
+   </clVoltage>
+   <clVoltage>
+    <!-- double cOffset -->
+    <cOffset>0.0</cOffset>
+    <!-- double cZero -->
+    <cZero>0.0</cZero>
+    <!-- double cSpan -->
+    <cSpan>0.0</cSpan>
+    <!-- double cMin -->
+    <cMin>0.0</cMin>
+    <!-- double cMax -->
+    <cMax>0.0</cMax>
+   </clVoltage>
+   <!-- std::vector<ns__Calibration> clAmpere -->
+   <clAmpere>
+    <!-- double cOffset -->
+    <cOffset>0.0</cOffset>
+    <!-- double cZero -->
+    <cZero>0.0</cZero>
+    <!-- double cSpan -->
+    <cSpan>0.0</cSpan>
+    <!-- double cMin -->
+    <cMin>0.0</cMin>
+    <!-- double cMax -->
+    <cMax>0.0</cMax>
+   </clAmpere>
+   <clAmpere>
+    <!-- double cOffset -->
+    <cOffset>0.0</cOffset>
+    <!-- double cZero -->
+    <cZero>0.0</cZero>
+    <!-- double cSpan -->
+    <cSpan>0.0</cSpan>
+    <!-- double cMin -->
+    <cMin>0.0</cMin>
+    <!-- double cMax -->
+    <cMax>0.0</cMax>
+   </clAmpere>
+   <!-- std::vector<ns__Calibration> clCosq -->
+   <clCosq>
+    <!-- double cOffset -->
+    <cOffset>0.0</cOffset>
+    <!-- double cZero -->
+    <cZero>0.0</cZero>
+    <!-- double cSpan -->
+    <cSpan>0.0</cSpan>
+    <!-- double cMin -->
+    <cMin>0.0</cMin>
+    <!-- double cMax -->
+    <cMax>0.0</cMax>
+   </clCosq>
+   <clCosq>
+    <!-- double cOffset -->
+    <cOffset>0.0</cOffset>
+    <!-- double cZero -->
+    <cZero>0.0</cZero>
+    <!-- double cSpan -->
+    <cSpan>0.0</cSpan>
+    <!-- double cMin -->
+    <cMin>0.0</cMin>
+    <!-- double cMax -->
+    <cMax>0.0</cMax>
+   </clCosq>
+   <!-- ns__ErrorCode clErr -->
+   <clErr>
+    <!-- int eNo -->
+    <eNo>0</eNo>
+    <!-- std::string eMsg -->
+    <eMsg></eMsg>
+    <!-- enum ns__SettingLevel eType -->
+    <eType>Normal</eType>
+   </clErr>
+  </ns:CalibrationList>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

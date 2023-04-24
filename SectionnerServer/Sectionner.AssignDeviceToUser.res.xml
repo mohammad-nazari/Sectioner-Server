@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns="Sectionner">
+ <SOAP-ENV:Body>
+  <!-- ns__AssignDeviceToUser(..., ns__ErrorCode &responseError) -->
+  <ns:ErrorCode>
+   <!-- int eNo -->
+   <eNo>0</eNo>
+   <!-- std::string eMsg -->
+   <eMsg></eMsg>
+   <!-- enum ns__SettingLevel eType -->
+   <eType>Normal</eType>
+  </ns:ErrorCode>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

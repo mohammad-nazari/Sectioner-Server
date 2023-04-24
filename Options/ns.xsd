@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <schema targetNamespace="Options"
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns="Options"
+    xmlns="http://www.w3.org/2001/XMLSchema"
+    elementFormDefault="unqualified"
+    attributeFormDefault="unqualified">
+    <import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+    <simpleType name="SensorName"><!-- ns__SensorName -->
+      <restriction base="xsd:string">
+        <enumeration value="GAS"/><!-- GAS -->
+<!-- = 0 -->
+        <enumeration value="TEMPERATURE"/><!-- TEMPERATURE -->
+<!-- = 1 -->
+        <enumeration value="HUMIDITY"/><!-- HUMIDITY -->
+<!-- = 2 -->
+        <enumeration value="H2S"/><!-- H2S -->
+<!-- = 3 -->
+        <enumeration value="PRESSER"/><!-- PRESSER -->
+<!-- = 4 -->
+        <enumeration value="ACVOLTAGE"/><!-- ACVOLTAGE -->
+<!-- = 5 -->
+        <enumeration value="ACVOLTAGE1"/><!-- ACVOLTAGE1 -->
+<!-- = 6 -->
+        <enumeration value="ACVOLTAGE2"/><!-- ACVOLTAGE2 -->
+<!-- = 7 -->
+        <enumeration value="ACVOLTAGE3"/><!-- ACVOLTAGE3 -->
+<!-- = 8 -->
+        <enumeration value="ACAMPERE"/><!-- ACAMPERE -->
+<!-- = 9 -->
+        <enumeration value="ACAMPERE1"/><!-- ACAMPERE1 -->
+<!-- = 10 -->
+        <enumeration value="ACAMPERE2"/><!-- ACAMPERE2 -->
+<!-- = 11 -->
+        <enumeration value="ACAMPERE3"/><!-- ACAMPERE3 -->
+<!-- = 12 -->
+        <enumeration value="DCVOLTAGE"/><!-- DCVOLTAGE -->
+<!-- = 13 -->
+        <enumeration value="DCAMPERE"/><!-- DCAMPERE -->
+<!-- = 14 -->
+        <enumeration value="UNKNOWN"/><!-- UNKNOWN -->
+<!-- = 15 -->
+      </restriction>
+    </simpleType>
+    <complexType name="Sensor"><!-- ns__Sensor -->
+          <sequence>
+            <element name="sensorName" type="ns:SensorName" minOccurs="0" maxOccurs="1" default="TEMPERATURE"/><!-- ns__Sensor::sensorName -->
+            <element name="sensorCalibration" type="xsd:int" minOccurs="0" maxOccurs="1" default="5"/><!-- ns__Sensor::sensorCalibration -->
+            <element name="sensorMinimumValue" type="xsd:int" minOccurs="0" maxOccurs="1" default="0"/><!-- ns__Sensor::sensorMinimumValue -->
+            <element name="sensorMaximumValue" type="xsd:int" minOccurs="0" maxOccurs="1" default="100"/><!-- ns__Sensor::sensorMaximumValue -->
+            <element name="sensorMaximumThreshold" type="xsd:int" minOccurs="0" maxOccurs="1" default="10"/><!-- ns__Sensor::sensorMaximumThreshold -->
+            <element name="sensorMinimumThreshold" type="xsd:int" minOccurs="0" maxOccurs="1" default="10"/><!-- ns__Sensor::sensorMinimumThreshold -->
+          </sequence>
+    </complexType>
+    <complexType name="DataBaseInfo"><!-- ns__DataBaseInfo -->
+          <sequence>
+            <element name="dataBaseInfoServerName" type="xsd:string" minOccurs="0" maxOccurs="1" default="localhost"/><!-- ns__DataBaseInfo::dataBaseInfoServerName -->
+            <element name="dataBaseInfoPort" type="xsd:int" minOccurs="0" maxOccurs="1" default="3306"/><!-- ns__DataBaseInfo::dataBaseInfoPort -->
+            <element name="dataBaseInfoUserName" type="xsd:string" minOccurs="0" maxOccurs="1" default="root"/><!-- ns__DataBaseInfo::dataBaseInfoUserName -->
+            <element name="dataBaseInfoPassWord" type="xsd:string" minOccurs="0" maxOccurs="1" default="123456"/><!-- ns__DataBaseInfo::dataBaseInfoPassWord -->
+            <element name="databaseDatabeseName" type="xsd:string" minOccurs="0" maxOccurs="1" default="protectordb"/><!-- ns__DataBaseInfo::databaseDatabeseName -->
+          </sequence>
+    </complexType>
+    <complexType name="Messages"><!-- ns__Messages -->
+          <sequence>
+            <element name="messagesDescription" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- ns__Messages::messagesDescription -->
+            <element name="messagesString" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- ns__Messages::messagesString -->
+            <element name="messagesName" type="xsd:string" minOccurs="1" maxOccurs="1"/><!-- ns__Messages::messagesName -->
+            <element name="messagesCodeNumber" type="xsd:int" minOccurs="1" maxOccurs="1"/><!-- ns__Messages::messagesCodeNumber -->
+          </sequence>
+    </complexType>
+    <complexType name="ServerOptions"><!-- ns__ServerOptions -->
+          <sequence>
+            <element name="optionsDataBaseInfo" type="ns:DataBaseInfo" minOccurs="1" maxOccurs="1"/><!-- ns__ServerOptions::optionsDataBaseInfo -->
+            <element name="optionsTimeRepeat" type="xsd:int" minOccurs="0" maxOccurs="1" default="3"/><!-- ns__ServerOptions::optionsTimeRepeat -->
+            <element name="optionsSensorValues" type="ns:Sensor" minOccurs="0" maxOccurs="unbounded"/><!-- ns__ServerOptions::optionsSensorValues -->
+            <element name="optionsMessages" type="ns:Messages" minOccurs="0" maxOccurs="unbounded"/><!-- ns__ServerOptions::optionsMessages -->
+          </sequence>
+    </complexType>
+  </schema>
+

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+    xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+    xmlns:ns="Sectionner">
+ <SOAP-ENV:Body>
+  <!-- ns__GetUserDevices(..., ns__UserDevice &responseUserDevices) -->
+  <ns:UserDevice>
+   <!-- ns__User udUser -->
+   <udUser>
+    <!-- int uId -->
+    <uId>0</uId>
+    <!-- std::string uName -->
+    <uName></uName>
+    <!-- std::string uPassword -->
+    <uPassword></uPassword>
+    <!-- std::string uRePassword -->
+    <uRePassword></uRePassword>
+    <!-- std::string uFirstName -->
+    <uFirstName></uFirstName>
+    <!-- std::string uLastName -->
+    <uLastName></uLastName>
+    <!-- enum ns__UserType uType -->
+    <uType>Monitor</uType>
+    <!-- std::string uKey -->
+    <uKey></uKey>
+    <!-- ns__ErrorCode uErr -->
+    <uErr>
+     <!-- int eNo -->
+     <eNo>0</eNo>
+     <!-- std::string eMsg -->
+     <eMsg></eMsg>
+     <!-- enum ns__SettingLevel eType -->
+     <eType>Normal</eType>
+    </uErr>
+   </udUser>
+   <!-- std::vector<ns__Device> udDevs -->
+   <udDevs>
+    <!-- int dSerialNumber -->
+    <dSerialNumber>0</dSerialNumber>
+    <!-- enum ns__DeviceModel dModel -->
+    <dModel>SECTIONNER</dModel>
+    <!-- std::string dName -->
+    <dName></dName>
+    <!-- std::string dNikeName -->
+    <dNikeName></dNikeName>
+    <!-- std::string dLocation -->
+    <dLocation></dLocation>
+    <!-- std::string dCity -->
+    <dCity></dCity>
+    <!-- int dSocket -->
+    <dSocket>0</dSocket>
+    <!-- std::string dDNSAddress -->
+    <dDNSAddress></dDNSAddress>
+    <!-- ns__IP dIP -->
+    <dIP>
+     <!-- int ip1 -->
+     <ip1>0</ip1>
+     <!-- int ip2 -->
+     <ip2>0</ip2>
+     <!-- int ip3 -->
+     <ip3>0</ip3>
+     <!-- int ip4 -->
+     <ip4>0</ip4>
+    </dIP>
+    <!-- int dPort -->
+    <dPort>0</dPort>
+    <!-- time_t dDateTime -->
+    <dDateTime>2017-12-02T17:02:56Z</dDateTime>
+    <!-- time_t dDDateTime -->
+    <dDDateTime>2017-12-02T17:02:56Z</dDDateTime>
+    <!-- ns__Camera dCamera -->
+    <dCamera>
+     <!-- int cSocket -->
+     <cSocket>0</cSocket>
+     <!-- ns__IP cIP -->
+     <cIP>
+      <!-- int ip1 -->
+      <ip1>0</ip1>
+      <!-- int ip2 -->
+      <ip2>0</ip2>
+      <!-- int ip3 -->
+      <ip3>0</ip3>
+      <!-- int ip4 -->
+      <ip4>0</ip4>
+     </cIP>
+     <!-- int cPort -->
+     <cPort>0</cPort>
+     <!-- ns__ErrorCode cErr -->
+     <cErr>
+      <!-- int eNo -->
+      <eNo>0</eNo>
+      <!-- std::string eMsg -->
+      <eMsg></eMsg>
+      <!-- enum ns__SettingLevel eType -->
+      <eType>Normal</eType>
+     </cErr>
+    </dCamera>
+    <!-- ns__GPS dGPS -->
+    <dGPS>
+     <!-- double gX -->
+     <gX>0.0</gX>
+     <!-- double gY -->
+     <gY>0.0</gY>
+    </dGPS>
+    <!-- bool dReset -->
+    <dReset>false</dReset>
+    <!-- int dSamplingTime -->
+    <dSamplingTime>0</dSamplingTime>
+    <!-- double dTransPower -->
+    <dTransPower>0.0</dTransPower>
+    <!-- double dTableCapacity -->
+    <dTableCapacity>0.0</dTableCapacity>
+    <!-- double dPOK -->
+    <dPOK>0.0</dPOK>
+    <!-- double dPTotal -->
+    <dPTotal>0.0</dPTotal>
+    <!-- double dPR -->
+    <dPR>0.0</dPR>
+    <!-- double dPS -->
+    <dPS>0.0</dPS>
+    <!-- double dPT -->
+    <dPT>0.0</dPT>
+    <!-- double dQR -->
+    <dQR>0.0</dQR>
+    <!-- double dQS -->
+    <dQS>0.0</dQS>
+    <!-- double dQT -->
+    <dQT>0.0</dQT>
+    <!-- std::string dKeyName -->
+    <dKeyName></dKeyName>
+    <!-- ns__Picture dPicture -->
+    <dPicture>
+     <!-- std::string pName -->
+     <pName></pName>
+     <!-- int pSize -->
+     <pSize>0</pSize>
+     <!-- int pPartSize -->
+     <pPartSize>0</pPartSize>
+     <!-- int pPartNo -->
+     <pPartNo>0</pPartNo>
+     <!-- int pCRC -->
+     <pCRC>0</pCRC>
+     <!-- std::vector<ns__PicturePart> pParts -->
+     <pParts>
+      <!-- int ppIndex -->
+      <ppIndex>0</ppIndex>
+      <!-- std::string ppData -->
+      <ppData></ppData>
+      <!-- int ppCRC -->
+      <ppCRC>0</ppCRC>
+     </pParts>
+     <pParts>
+      <!-- int ppIndex -->
+      <ppIndex>0</ppIndex>
+      <!-- std::string ppData -->
+      <ppData></ppData>
+      <!-- int ppCRC -->
+      <ppCRC>0</ppCRC>
+     </pParts>
+    </dPicture>
+    <!-- std::string dCustomCommand -->
+    <dCustomCommand></dCustomCommand>
+    <!-- std::vector<bool> dRelays -->
+    <dRelays>false</dRelays>
+    <dRelays>false</dRelays>
+    <!-- std::vector<enum ns__RequestType> dRequests -->
+    <dRequests>CALIBRATION</dRequests>
+    <dRequests>CALIBRATION</dRequests>
+    <!-- std::vector<ns__SensorExtension> dSensors -->
+    <dSensors>
+     <!-- enum ns__SensorName seName -->
+     <seName>ACVOLTAGE</seName>
+     <!-- std::vector<double> seVal -->
+     <seVal>0.0</seVal>
+     <seVal>0.0</seVal>
+    </dSensors>
+    <dSensors>
+     <!-- enum ns__SensorName seName -->
+     <seName>ACVOLTAGE</seName>
+     <!-- std::vector<double> seVal -->
+     <seVal>0.0</seVal>
+     <seVal>0.0</seVal>
+    </dSensors>
+    <!-- int dSmsTerm -->
+    <dSmsTerm>0</dSmsTerm>
+    <!-- bool dSms -->
+    <dSms>false</dSms>
+    <!-- time_t dSmsTime -->
+    <dSmsTime>2017-12-02T17:02:56Z</dSmsTime>
+    <!-- ns__ErrorCode dErr -->
+    <dErr>
+     <!-- int eNo -->
+     <eNo>0</eNo>
+     <!-- std::string eMsg -->
+     <eMsg></eMsg>
+     <!-- enum ns__SettingLevel eType -->
+     <eType>Normal</eType>
+    </dErr>
+   </udDevs>
+   <udDevs>
+    <!-- int dSerialNumber -->
+    <dSerialNumber>0</dSerialNumber>
+    <!-- enum ns__DeviceModel dModel -->
+    <dModel>SECTIONNER</dModel>
+    <!-- std::string dName -->
+    <dName></dName>
+    <!-- std::string dNikeName -->
+    <dNikeName></dNikeName>
+    <!-- std::string dLocation -->
+    <dLocation></dLocation>
+    <!-- std::string dCity -->
+    <dCity></dCity>
+    <!-- int dSocket -->
+    <dSocket>0</dSocket>
+    <!-- std::string dDNSAddress -->
+    <dDNSAddress></dDNSAddress>
+    <!-- ns__IP dIP -->
+    <dIP>
+     <!-- int ip1 -->
+     <ip1>0</ip1>
+     <!-- int ip2 -->
+     <ip2>0</ip2>
+     <!-- int ip3 -->
+     <ip3>0</ip3>
+     <!-- int ip4 -->
+     <ip4>0</ip4>
+    </dIP>
+    <!-- int dPort -->
+    <dPort>0</dPort>
+    <!-- time_t dDateTime -->
+    <dDateTime>2017-12-02T17:02:56Z</dDateTime>
+    <!-- time_t dDDateTime -->
+    <dDDateTime>2017-12-02T17:02:56Z</dDDateTime>
+    <!-- ns__Camera dCamera -->
+    <dCamera>
+     <!-- int cSocket -->
+     <cSocket>0</cSocket>
+     <!-- ns__IP cIP -->
+     <cIP>
+      <!-- int ip1 -->
+      <ip1>0</ip1>
+      <!-- int ip2 -->
+      <ip2>0</ip2>
+      <!-- int ip3 -->
+      <ip3>0</ip3>
+      <!-- int ip4 -->
+      <ip4>0</ip4>
+     </cIP>
+     <!-- int cPort -->
+     <cPort>0</cPort>
+     <!-- ns__ErrorCode cErr -->
+     <cErr>
+      <!-- int eNo -->
+      <eNo>0</eNo>
+      <!-- std::string eMsg -->
+      <eMsg></eMsg>
+      <!-- enum ns__SettingLevel eType -->
+      <eType>Normal</eType>
+     </cErr>
+    </dCamera>
+    <!-- ns__GPS dGPS -->
+    <dGPS>
+     <!-- double gX -->
+     <gX>0.0</gX>
+     <!-- double gY -->
+     <gY>0.0</gY>
+    </dGPS>
+    <!-- bool dReset -->
+    <dReset>false</dReset>
+    <!-- int dSamplingTime -->
+    <dSamplingTime>0</dSamplingTime>
+    <!-- double dTransPower -->
+    <dTransPower>0.0</dTransPower>
+    <!-- double dTableCapacity -->
+    <dTableCapacity>0.0</dTableCapacity>
+    <!-- double dPOK -->
+    <dPOK>0.0</dPOK>
+    <!-- double dPTotal -->
+    <dPTotal>0.0</dPTotal>
+    <!-- double dPR -->
+    <dPR>0.0</dPR>
+    <!-- double dPS -->
+    <dPS>0.0</dPS>
+    <!-- double dPT -->
+    <dPT>0.0</dPT>
+    <!-- double dQR -->
+    <dQR>0.0</dQR>
+    <!-- double dQS -->
+    <dQS>0.0</dQS>
+    <!-- double dQT -->
+    <dQT>0.0</dQT>
+    <!-- std::string dKeyName -->
+    <dKeyName></dKeyName>
+    <!-- ns__Picture dPicture -->
+    <dPicture>
+     <!-- std::string pName -->
+     <pName></pName>
+     <!-- int pSize -->
+     <pSize>0</pSize>
+     <!-- int pPartSize -->
+     <pPartSize>0</pPartSize>
+     <!-- int pPartNo -->
+     <pPartNo>0</pPartNo>
+     <!-- int pCRC -->
+     <pCRC>0</pCRC>
+     <!-- std::vector<ns__PicturePart> pParts -->
+     <pParts>
+      <!-- int ppIndex -->
+      <ppIndex>0</ppIndex>
+      <!-- std::string ppData -->
+      <ppData></ppData>
+      <!-- int ppCRC -->
+      <ppCRC>0</ppCRC>
+     </pParts>
+     <pParts>
+      <!-- int ppIndex -->
+      <ppIndex>0</ppIndex>
+      <!-- std::string ppData -->
+      <ppData></ppData>
+      <!-- int ppCRC -->
+      <ppCRC>0</ppCRC>
+     </pParts>
+    </dPicture>
+    <!-- std::string dCustomCommand -->
+    <dCustomCommand></dCustomCommand>
+    <!-- std::vector<bool> dRelays -->
+    <dRelays>false</dRelays>
+    <dRelays>false</dRelays>
+    <!-- std::vector<enum ns__RequestType> dRequests -->
+    <dRequests>CALIBRATION</dRequests>
+    <dRequests>CALIBRATION</dRequests>
+    <!-- std::vector<ns__SensorExtension> dSensors -->
+    <dSensors>
+     <!-- enum ns__SensorName seName -->
+     <seName>ACVOLTAGE</seName>
+     <!-- std::vector<double> seVal -->
+     <seVal>0.0</seVal>
+     <seVal>0.0</seVal>
+    </dSensors>
+    <dSensors>
+     <!-- enum ns__SensorName seName -->
+     <seName>ACVOLTAGE</seName>
+     <!-- std::vector<double> seVal -->
+     <seVal>0.0</seVal>
+     <seVal>0.0</seVal>
+    </dSensors>
+    <!-- int dSmsTerm -->
+    <dSmsTerm>0</dSmsTerm>
+    <!-- bool dSms -->
+    <dSms>false</dSms>
+    <!-- time_t dSmsTime -->
+    <dSmsTime>2017-12-02T17:02:56Z</dSmsTime>
+    <!-- ns__ErrorCode dErr -->
+    <dErr>
+     <!-- int eNo -->
+     <eNo>0</eNo>
+     <!-- std::string eMsg -->
+     <eMsg></eMsg>
+     <!-- enum ns__SettingLevel eType -->
+     <eType>Normal</eType>
+    </dErr>
+   </udDevs>
+   <!-- ns__ErrorCode udErr -->
+   <udErr>
+    <!-- int eNo -->
+    <eNo>0</eNo>
+    <!-- std::string eMsg -->
+    <eMsg></eMsg>
+    <!-- enum ns__SettingLevel eType -->
+    <eType>Normal</eType>
+   </udErr>
+  </ns:UserDevice>
+ </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
